@@ -3,7 +3,7 @@ import { sendEmail } from "../helpers/requests";
 import validate from "../helpers/validate";
 import Swal from "sweetalert2";
 
-function useSendData(initialState = {}) {
+function useSendData(initialState = {}, lang) {
 
   const [values, setValues] = useState(initialState);
 
@@ -16,9 +16,9 @@ function useSendData(initialState = {}) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const errors = validate(values);
+    const errors = validate(values, lang);
     Object.entries(errors).length < 1
-      ? (sendEmail(values) && handleReset())
+      ? (sendEmail(values, lang) && handleReset())
       : alert(errors);
   };
 

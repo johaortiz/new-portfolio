@@ -9,7 +9,7 @@ const initialState = {
 
 function Contact({ language }) {
 
-  const { values, handleChange, handleSubmit } = useSendData(initialState);
+  const { values, handleChange, handleSubmit } = useSendData(initialState, language);
 
   return (
     <form onSubmit={handleSubmit}>

@@ -39,7 +39,7 @@ function Experiencie({ language }) {
                                 <p className="text-start py-4">React, Redux, Css, NodeJs, Sequelize, Postgres, Morgan</p>
                                 <div className="modal-action">
                                     <label htmlFor="my-modal-0" className="btn" onClick={() => window.open('https://www.soyhenry.com/', '_blank')}>Henry</label>
-                                    <label htmlFor="my-modal-0" className="btn" onClick={() => { Swal.fire({ title: 'Oops...', icon: 'info', text: `I didn't deploy the project :(` }) }}>{language === 'en' ? 'Project' : 'Proyecto'}</label>
+                                    <label htmlFor="my-modal-0" className="btn" onClick={() => { Swal.fire({ title: 'Oops...', icon: 'info', text: language === 'en' ? `I didn't deploy the project :(` : 'No deployé el proyecto :(' }) }}>{language === 'en' ? 'Project' : 'Proyecto'}</label>
                                 </div>
                             </label>
                         </label>
@@ -81,8 +81,8 @@ function Experiencie({ language }) {
                     <img src={finalProjectH} alt="Image-Dogs-PI" className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">Final Project of "Henry"</h2>
-                    <p>Build an e-commerce</p>
+                    <h2 className="card-title">{language === 'en' ? 'Final Project of "Henry"' : 'Proyecto Final de "Henry"'}</h2>
+                    <p>{language === 'en' ? 'Build an e-commerce' : 'Construir un e-commerce'}</p>
                     <div className="card-actions">
                         <label htmlFor="my-modal-2" className="btn">{language === 'en' ? 'View More' : 'Ver Más'}</label>
                         <input type="checkbox" id="my-modal-2" className="modal-toggle" />

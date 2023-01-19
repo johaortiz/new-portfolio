@@ -9,11 +9,7 @@ function Home({ language }) {
 
     useEffect(() => {
 
-        let string0 = ["Hello, I'm <strong>Joaquín Ortiz</strong>",
-            "I'm a <strong>Full Stack Web Developer</strong>"];
-        let string1 = ["I'm a <strong>Front End Developer</strong>",
-            "I'm a <strong>Back End Developer</strong>"];
-        let string2 = ["Hello world!", "I'm Joha", "And ApsTris Too!"];
+        let string0, string1, string2;
 
         if (language === "en") {
             string0 = ["Hello, I'm <strong>Joaquín Ortiz</strong>",
@@ -67,7 +63,7 @@ function Home({ language }) {
             typed1.destroy();
             typed2.destroy();
         };
-    }, []);
+    }, [language]);
 
 
     return (
