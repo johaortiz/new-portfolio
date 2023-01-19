@@ -2,17 +2,33 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
 
-function Home() {
+function Home({ language }) {
     const el0 = useRef(null);
     const el1 = useRef(null);
     const el3 = useRef(null);
 
     useEffect(() => {
-        const string0 = ["Hello, I'm <strong>Joaquín Ortiz</strong>",
+
+        let string0 = ["Hello, I'm <strong>Joaquín Ortiz</strong>",
             "I'm a <strong>Full Stack Web Developer</strong>"];
-        const string1 = ["I'm a <strong>Front End Developer</strong>",
+        let string1 = ["I'm a <strong>Front End Developer</strong>",
             "I'm a <strong>Back End Developer</strong>"];
-        const string2 = ["Hello world!", "I'm Joha", "And ApsTris Too!"];
+        let string2 = ["Hello world!", "I'm Joha", "And ApsTris Too!"];
+
+        if (language === "en") {
+            string0 = ["Hello, I'm <strong>Joaquín Ortiz</strong>",
+                "I'm a <strong>Full Stack Web Developer</strong>"];
+            string1 = ["I'm a <strong>Front End Developer</strong>",
+                "I'm a <strong>Back End Developer</strong>"];
+            string2 = ["Hello world!", "I'm Joha", "And ApsTris Too!"];
+        } else {
+            string0 = ["Hola, soy <strong>Joaquín Ortiz</strong>",
+                "Soy <strong>Desarrollador Web Full Stack</strong>"];
+            string1 = ["Soy <strong>Desarrollador Front End</strong>",
+                "Soy <strong>Desarrollador Back End</strong>"];
+            string2 = ["Hola mundo!", "Soy Joha", "Y ApsTris también!"];
+        };
+
         const options0 = {
             strings: string0,
             typeSpeed: 50,
