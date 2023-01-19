@@ -21,9 +21,6 @@ function About({ language }) {
                         parrEn.map((p, i) => <p key={i} className="mx-10 my-5 text-base text-justify">{p}</p>)
                         : parrEs.map((p, i) => <p key={i} className="mx-10 my-5 text-base text-justify">{p}</p>)
                 }
-                <div className="mockup-code w-44 mb-10">
-                    <pre data-prefix="👾"><code>{language === 'en' ? 'Read it all' : 'Leálo todo'} 😉</code></pre>
-                </div>
             </div >
         </div>
     )
