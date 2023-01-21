@@ -31,9 +31,9 @@ function Drawer({ Component }) {
                     <div className="divider"></div>
                     <li className="w-full"><Link to='/projects' className="flex justify-center">{language === 'en' ? 'Projects' : 'Proyectos'}</Link></li>
                     <div className="divider"></div>
-                    <li className="w-full"><Link to='/about-me' className="flex justify-center">{language === 'en' ? 'About Me' : 'Sobre mí'}</Link></li>
+                    <li className="w-full"><Link to='/about' className="flex justify-center">{language === 'en' ? 'About Me' : 'Sobre mí'}</Link></li>
                     <div className="divider"></div>
-                    <li className="w-full"><Link to='/contact-me' className="flex justify-center">{language === 'en' ? 'Contact Me' : 'Contáctame'}</Link></li>
+                    <li className="w-full"><Link to='/contact' className="flex justify-center">{language === 'en' ? 'Contact Me' : 'Contáctame'}</Link></li>
                 </ul>
             </div>
         </div>

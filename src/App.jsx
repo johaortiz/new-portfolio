@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Suspense fallback={<>Loading...</>}><Drawer Component={Home} /></Suspense>} />
         <Route exact path='/projects' element={<Suspense fallback={<>Loading...</>}><Drawer Component={Experiencie} /></Suspense>} />
-        <Route exact path='/about-me' element={<Suspense fallback={<>Loading...</>}><Drawer Component={About} /></Suspense>} />
-        <Route exact path='/contact-me' element={<Suspense fallback={<>Loading...</>}><Drawer Component={Contact} /></Suspense>} />
+        <Route exact path='/about' element={<Suspense fallback={<>Loading...</>}><Drawer Component={About} /></Suspense>} />
+        <Route exact path='/contact' element={<Suspense fallback={<>Loading...</>}><Drawer Component={Contact} /></Suspense>} />
       </Routes>
     </div>
   );
