@@ -18,6 +18,14 @@
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 1rem;
 }
+
+.gridOfLinks {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  gap: 1rem;
+}
+
 .aa {
   height: 100vh;
 }
