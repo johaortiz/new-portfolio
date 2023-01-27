@@ -6,7 +6,7 @@ import cvEs from "../../assets/CV_Ortiz_Joaquin_Es.pdf";
 
 function About({ language }) {
   const parrEn = [
-    "I'm a young full-stack developer with almost 2 years of experience in the development of web and mobile applications. I'm currently a university student studying Systems Engineering, which has given me a solid theoretical and practical background in programming.",
+    "I'm a young full-stack developer with almost 2 years of experience in the development of web and mobile applications. I am currently a university student of Systems Engineering, which has given me a solid theoretical and practical background in programming.",
     "My skills include proficiency in languages such as JavaScript, C#, and Java, as well as tools and technologies such as React, Node.js, and MongoDB. I also have experience in the development of mobile applications with React Native.",
     "In addition to my passion for programming, I also love teaching and mentoring others. I have had the opportunity to help several people achieve their goals in programming, and I'm proud to say that over 90% of the people I have worked with have succeeded in passing or achieving their goals.",
     "In my free time, I'm passionate about entrepreneurship and developing my own projects, especially in the field of programming. My most recent project was an e-commerce bookstore.",
@@ -28,22 +28,19 @@ function About({ language }) {
             {language === "en" ? "Who's I am?" : "¿Quién soy yo?"}
           </h3>
           <small className="mx-10 moc">
-            {language === "en"
-              ? "Really, I don't know"
-              : "En realidad, no lo sé"}{" "}
             🤔
           </small>
           {language === "en"
             ? parrEn.map((p, i) => (
-                <p key={i} className="mx-10 my-5 text-base text-justify">
-                  {p}
-                </p>
-              ))
+              <p key={i} className="mx-10 my-5 text-base text-justify">
+                {p}
+              </p>
+            ))
             : parrEs.map((p, i) => (
-                <p key={i} className="mx-10 my-5 text-base text-justify">
-                  {p}
-                </p>
-              ))}
+              <p key={i} className="mx-10 my-5 text-base text-justify">
+                {p}
+              </p>
+            ))}
           <h3 className="text-lg font-bold mx-10 moc mt-10 text-center">
             {language === "en" ? "Links" : "Enlaces"}
           </h3>
