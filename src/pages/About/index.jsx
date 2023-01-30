@@ -22,7 +22,7 @@ function About({ language }) {
 
   return (
     <>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-20">
         <div className="flex-col justify-start items-start aa w-full mx-5">
           <h3 className="text-lg font-bold mx-10 mt-20 moc">
             {language === "en" ? "Who's I am?" : "¿Quién soy yo?"}
