@@ -48,6 +48,13 @@ const cards = [
         },
         url: "https://www.soyhenry.com/",
       },
+      {
+        text: {
+          en: "Project",
+          es: "Proyecto",
+        },
+        url: "http://www.perritosmalvados.com.ar/",
+      },
     ],
   },
   {
