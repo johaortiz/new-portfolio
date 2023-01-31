@@ -72,7 +72,7 @@ function Home({ language }) {
                 <p className="mx-10 my-5 text-3xl" ref={el0}></p>
                 <br />
                 <p className="mx-10 my-5 text-3xl" ref={el1}></p>
-                <div className="mockup-code w-40 my-10 mx-2">
+                <div className="absolute bottom-0 mockup-code max-w-0 my-10 mx-10">
                     <pre data-prefix="👾"><code ref={el3}></code></pre>
                 </div>
             </div >
