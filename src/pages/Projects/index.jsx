@@ -3,7 +3,7 @@ import cardsIfo from './cardsInfo';
 function Projects({ language }) {
 
     return (
-        <div className='gridOfCards aa my-10 mb-20'>
+        <div className='gridOfCards mx-10'>
             {
                 cardsIfo.map((card) => {
                     return <Card key={card.modal} card={card} language={language} />

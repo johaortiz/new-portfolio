@@ -22,7 +22,7 @@ function About({ language }) {
 
   return (
     <>
-      <div className="flex justify-center items-center mb-20">
+      <div className="flex justify-center items-center">
         <div className="flex-col justify-start items-start aa w-full mx-5">
           <h3 className="text-lg font-bold mx-10 mt-20 moc">
             {language === "en" ? "Who's I am?" : "¿Quién soy yo?"}
@@ -45,8 +45,8 @@ function About({ language }) {
             {language === "en" ? "Links" : "Enlaces"}
           </h3>
           <div className="my-4 gridOfLinks">
-            <div className="avatar flex flex-col">
-              <label className="my-1">Curriculum</label>
+            <div className="avatar flex flex-col text-center">
+              <label className="my-1">{language === 'en' ? 'Curriculum Español' : 'Curriculum English'}</label>
               <div className="w-12 h-12 mt-2 mx-2 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <a
                   href={language === "en" ? cvEn : cvEs}
