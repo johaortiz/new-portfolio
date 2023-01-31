@@ -46,7 +46,7 @@ function About({ language }) {
           </h3>
           <div className="my-4 gridOfLinks">
             <div className="avatar flex flex-col text-center">
-              <label className="my-1">{language === 'en' ? 'Curriculum Español' : 'Curriculum English'}</label>
+              <label className="my-1">{language === 'en' ? 'Curriculum English' : 'Curriculum Español'}</label>
               <div className="w-12 h-12 mt-2 mx-2 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <a
                   href={language === "en" ? cvEn : cvEs}
