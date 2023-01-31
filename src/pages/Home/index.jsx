@@ -67,7 +67,7 @@ function Home({ language }) {
 
 
     return (
-        <div className="aa flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mt-32">
             <div className="w-full mx-10">
                 <p className="mx-10 my-5 text-3xl" ref={el0}></p>
                 <br />
